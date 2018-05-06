@@ -26,40 +26,22 @@
   src: local("IBM Plex Sans Bold"), url("../fonts/web/eot/IBMPlexSans-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/desktop/mac/IBMPlexSans-Bold.otf") format("opentype"), url("../fonts/desktop/pc/IBMPlexSans-Bold.ttf") format("truetype");
 }
 
-#container {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+body {
+  font-family: 'IBM Plex Sans', sans-serif;
+
+}
+
+.container {
+  text-align: center;
   margin: auto;
+  background-color: white;
   width: 960px;
 }
 
-body {
-  font-family: 'IBM Plex Sans', sans-serif;
-}
-
-a {
-  text-decoration: none;
-}
-
-strong,
-b {
-  font-weight: 700;
-}
-
 header {
-  display: -ms-flexbox;
-  display: flex;
+  margin-top: 40px;
+  margin-bottom: 40px;
   padding-top: 40px;
-  padding-bottom: 40px;
-  font-size: 36px;
-  font-weight: 400;
-}
-
-header .fa-map {
-  width: 60px;
-  text-align: center;
 }
 
 header a {
@@ -67,275 +49,170 @@ header a {
   color: black;
 }
 
-header h1 {
-  margin-left: 20px;
+header #title {
+  text-align: center;
+  margin-left: 70px;
+  margin-right: 70px;
   width: 860px;
+}
+
+header #icon {
+  float: left;
+  text-align: center;
+  width: 100px;
+}
+
+#content {
   text-align: center;
 }
 
-.map-page header {
-  padding: 0;
-  height: 112px;
-}
-
-.map-page header a {
-  padding-top: 38px;
-}
-
-.map-page header h1 {
-  margin: 8px 0;
-  padding: 20px 0 16px;
-  font-size: 24px;
-}
-
-.map-page header h1 b {
-  display: block;
-  margin: 8px 0;
-}
-
-nav {
-  width: 80px;
-}
-
-nav li {
-  position: relative;
+#years {
+  float: left;
   width: 60px;
-  text-align: center;
+  height: 260px;
+  margin-left: 40px;
+  margin-right: 10px;
 }
 
-nav li a {
-  display: inline-block;
+#years ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#years a {
   text-decoration: none;
-  line-height: 40px;
-  color: black;
-  font-size: 18px;
-}
-
-nav li a:hover::before {
-  position: absolute;
-  top: 0;
-  left: 100%;
-}
-
-nav li.current a::before {
-  width: 0;
-  height: 0;
-  content: '';
-  border-top: 20px solid transparent;
-  border-right: 20px solid transparent;
-  border-bottom: 20px solid transparent;
-  border-left: 20px solid transparent;
-  border-left-color: transparent;
-  position: absolute;
-  top: 0;
-  left: 100%;
-}
-
-nav li.current:nth-child(1) a::before {
-  border-left-color: #f5a3b0;
-}
-
-nav li.current:nth-child(2) a::before {
-  border-left-color: #9cc5d7;
-}
-
-nav li.current:nth-child(3) a::before {
-  border-left-color: #f7f3ac;
-}
-
-nav li.current:nth-child(4) a::before {
-  border-left-color: #c6a2f5;
-}
-
-nav li.current:nth-child(5) a::before {
-  border-left-color: #9cd7ab;
-}
-
-nav li.current:nth-child(6) a::before {
-  border-left-color: #f7d5a7;
-}
-
-nav li.current:nth-child(7) a::before {
-  border-left-color: #f79cd0;
-}
-
-nav li:nth-child(1) {
-  background-color: #f5a3b0;
-}
-
-nav li:nth-child(1) a:hover::before {
-  width: 0;
-  height: 0;
-  content: '';
-  border-top: 20px solid transparent;
-  border-right: 20px solid transparent;
-  border-bottom: 20px solid transparent;
-  border-left: 20px solid transparent;
-  border-left-color: #f5a3b0;
-}
-
-nav li:nth-child(2) {
-  background-color: #9cc5d7;
-}
-
-nav li:nth-child(2) a:hover::before {
-  width: 0;
-  height: 0;
-  content: '';
-  border-top: 20px solid transparent;
-  border-right: 20px solid transparent;
-  border-bottom: 20px solid transparent;
-  border-left: 20px solid transparent;
-  border-left-color: #9cc5d7;
-}
-
-nav li:nth-child(3) {
-  background-color: #f7f3ac;
-}
-
-nav li:nth-child(3) a:hover::before {
-  width: 0;
-  height: 0;
-  content: '';
-  border-top: 20px solid transparent;
-  border-right: 20px solid transparent;
-  border-bottom: 20px solid transparent;
-  border-left: 20px solid transparent;
-  border-left-color: #f7f3ac;
-}
-
-nav li:nth-child(4) {
-  background-color: #c6a2f5;
-}
-
-nav li:nth-child(4) a:hover::before {
-  width: 0;
-  height: 0;
-  content: '';
-  border-top: 20px solid transparent;
-  border-right: 20px solid transparent;
-  border-bottom: 20px solid transparent;
-  border-left: 20px solid transparent;
-  border-left-color: #c6a2f5;
-}
-
-nav li:nth-child(5) {
-  background-color: #9cd7ab;
-}
-
-nav li:nth-child(5) a:hover::before {
-  width: 0;
-  height: 0;
-  content: '';
-  border-top: 20px solid transparent;
-  border-right: 20px solid transparent;
-  border-bottom: 20px solid transparent;
-  border-left: 20px solid transparent;
-  border-left-color: #9cd7ab;
-}
-
-nav li:nth-child(6) {
-  background-color: #f7d5a7;
-}
-
-nav li:nth-child(6) a:hover::before {
-  width: 0;
-  height: 0;
-  content: '';
-  border-top: 20px solid transparent;
-  border-right: 20px solid transparent;
-  border-bottom: 20px solid transparent;
-  border-left: 20px solid transparent;
-  border-left-color: #f7d5a7;
-}
-
-nav li:nth-child(7) {
-  background-color: #f79cd0;
-}
-
-nav li:nth-child(7) a:hover::before {
-  width: 0;
-  height: 0;
-  content: '';
-  border-top: 20px solid transparent;
-  border-right: 20px solid transparent;
-  border-bottom: 20px solid transparent;
-  border-left: 20px solid transparent;
-  border-left-color: #f79cd0;
-}
-
-main {
-  background-color: #e3e3e3;
-  padding-top: 46.4px;
-  width: 860px;
-}
-
-main p {
-  padding-left: 80px;
-  width: 720px;
-  line-height: 26px;
-  font-weight: 300;
-}
-
-main ul {
-  background-color: #f0f0f0;
-  padding-top: 80px;
-  padding-bottom: 80px;
-  padding-left: 80px;
-  counter-reset: listStyle;
-}
-
-main li {
-  counter-increment: listStyle;
-}
-
-main li::before {
-  font-weight: 700;
-  content: counter(listStyle, upper-alpha);
-}
-
-picture {
   display: block;
-  padding-bottom: 80px;
-  text-align: center;
+  color: black;
 }
 
-picture img {
-  padding-top: 80px;
-}
-
-picture.nineteen-forty {
+#sec-1940 {
   background-color: #f5a3b0;
+  padding: 10px;
 }
 
-picture.nineteen-fifty-six {
+#sec-1956 {
   background-color: #9cc5d7;
+  padding: 10px;
 }
 
-picture.nineteen-fifty-nine {
+#sec-1959 {
   background-color: #f7f3ac;
+  padding: 10px;
 }
 
-picture.nineteen-sixty {
+#sec-1960 {
   background-color: #c6a2f5;
+  padding: 10px;
 }
 
-picture.nineteen-sixty-two {
+#sec-1962 {
   background-color: #9cd7ab;
+  padding: 10px;
 }
 
-picture.nineteen-seventy {
+#sec-1970 {
   background-color: #f7d5a7;
+  padding: 10px
 }
 
-picture.nineteen-eighty {
+#sec-1980 {
   background-color: #f79cd0;
+  padding: 10px
 }
 
-.bullet {
-  color: #b4b4b4;
+
+
+#main {
+  float: right;
+  width: 800px;
+  height: 260px;
+  margin-right: 40px;
+  margin-left: 10px;
+  background-color: #e3e3e3;
 }
 
-.map-page main {
-  padding-top: 0;
+#main p {
+  text-align: left;
+  background-color: #e3e3e3;
+  padding: 60px;
+}
+
+i {
+  font-size:30px;
+  margin-left: 40px; 
+}
+
+body #map {
+  float: right;
+  width: 800px;
+  margin-right: 40px;
+  background-color: #f0f0f0;
+}
+
+#display {
+  font-size: 85%;
+}
+
+.details {
+  float: left;
+  text-align: left;
+  padding-top: 80px;
+  padding-right: 20px;
+  padding-bottom: 80px;
+  padding-left: 80px;
+  list-style-type: none;
+}
+
+.triangle {
+  display:none;
+  width:auto;
+  position:fixed;
+  float:inherit;
+  margin-left: 48px;
+  margin-top: -25px;
+  border-top: 1.1em solid transparent;
+  border-bottom: 1.1em solid transparent;
+  border-left: 1em solid;
+}
+
+#sec-1940:hover .triangle, #sec-1956:hover .triangle, #sec-1959:hover .triangle, 
+#sec-1960:hover .triangle, #sec-1962:hover .triangle, #sec-1970:hover .triangle,
+#sec-1980:hover .triangle{
+    display: block;
+}
+
+#sec-1940:hover .triangle {
+  border-left: 1em solid #f5a3b0;
+}
+#sec-1956:hover .triangle {
+  border-left: 1em solid #9cc5d7;
+}
+#sec-1959:hover .triangle {
+  border-left: 1em solid #f7f3ac;
+}
+#sec-1960:hover .triangle {
+  border-left: 1em solid #c6a2f5;
+}
+#sec-1962:hover .triangle {
+  border-left: 1em solid #9cd7ab;
+}
+#sec-1970:hover .triangle {
+  border-left: 1em solid #f7d5a7;
+}
+#sec-1980:hover .triangle {
+  border-left: 1em solid #f79cd0;
+}
+
+
+
+.spacing {
+  text-indent: 1em;
+}
+
+footer {
+  clear: both;
+}
+
+body {
+  background-color: #c1c1c1;
 }
